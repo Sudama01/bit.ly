@@ -39,7 +39,7 @@ def home():
             print("Error:", e)
             return jsonify({"message": "something went wrong"}), 500
     else:
-        return jsonify({"message": "method not allowed"
+        return jsonify({"message": "method not allowed"})
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8000)
