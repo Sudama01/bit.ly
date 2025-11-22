@@ -35,11 +35,11 @@ def home():
             short_url =  serverURL + key
 
             return jsonify({"url": short_url}), 200
-    else:
-        return jsonify({"message": "method not allowed"
         except Exception as e:
             print("Error:", e)
             return jsonify({"message": "something went wrong"}), 500
+    else:
+        return jsonify({"message": "method not allowed"
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8000)
