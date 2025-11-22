@@ -1,2 +1,2 @@
 dictionary = {}
-serverURL = "http://localhost:8000/"
+serverURL = "https://bit-ly-dyo9.onrender.com/"
